@@ -1,4 +1,4 @@
-from PIL import Image
+tfrom PIL import Image
 from ftplib import FTP, error_perm
 import schedule
 import time
@@ -12,7 +12,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 
-# Define sets of source images (all must be 960x480 each)
+# Define sets of source images (assumed to be 960x480 each)
 mosaic_sets = [
     {
         "images": ["image1.png", "image2.png", "image3.png", "image4.png"],
